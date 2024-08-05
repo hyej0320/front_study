@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Noto Sans KR", sans-serif;
+    background-color: #f3f8f9;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+
+header .top-wrap {
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.6rem;
+    border-top: solid 1px #e1e1e1;
+    border-bottom: solid 1px #e1e1e1;
+    z-index: 3;
+}
+
+
+header .top-wrap .logo .icon-logo {
+    position: relative;
+    margin: 0 1.6rem;
+    height: 3.2rem;
+    z-index: 99;
+}
+
+header .top-wrap .address {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 0 56px 0 108px;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    transform: translate(-50%, -50%);
+}
+
+header .top-wrap .address .icon {
+    position: relative;
+    height: 1.8rem;
+    margin-right: 0.4rem;
+}
+
+header .top-wrap .address .setAddress {
+    font-weight: 700;
+    display: inline-block;
+    max-width: 200px;
+    line-height: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 100%;
+}
+
+header .top-wrap .button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+header .top-wrap .button .icon{
+    height: 5.6rem;
+}
+
+header .list-wrap {
+    background-color: #ffffff;
+    height: 5.6rem;
+    border-top: solid 1px #f3f8f9;
+    box-shadow: 0 2px 4px 0 rgba(138, 149, 158, 0.15);
+}
+
+header .list-wrap .list-box {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    height: 100%;
+}
+
+header .list-wrap .list-box > li {
+    line-height: 5.6rem;
+    width: 33.3%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.list-wrap .list-box > li:hover {
+    text-decoration-line: underline;
+}
+
+.content-box {
+    padding: 13.7rem 1.6rem 2.6rem;
+}
+
+.content-box .main-slide-wrap {
+    position: relative;
+}
+
+.content-box .main-slide-wrap #main-slide {
+    display: block;
+    width: 100%;
+    z-index: 1;
+    padding-top: 75%;
+}
+
+.content-box .main-slide-wrap #main-slide .slide-images > img {
+    position: absolute;
+    border-radius: 1rem;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.slide-dots-wrap {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+}
+
+.slide-dots-wrap > button {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background-color: #d6d6d6;
+    border-radius: 30px;
+    border: none;
+}
+
+.slide-dots-wrap > :first-child {
+    background-color: #869791;
+}
+
+.order-type-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem -0.4rem 0;
+    padding-top: 3.5rem;
+}
+
+.order-type-wrap .btn-order-type {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7.6rem;
+    margin: 0 0.4rem;
+    background: linear-gradient(90deg, #da291c 0%, #ef533c 100%);
+    box-shadow: 0 2px 4px 0 rgba(138, 149, 158, 0.15);
+    border: none;
+    border-radius: 1rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+}
+
+.order-type-wrap .btn-order-type .icon {
+    height: 4rem;
+}
+
+.order-type-wrap .btn-order-type .txt {
+    margin: 0 1rem;
+}
+
+.order-type-wrap .btn-order-type .arrow {
+    height: 1.6rem;
+}
+
+.link-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem -0.4rem 0;
+}
+
+.link-wrap .btn-link {
+    flex: 1;
+    height: 5rem;
+    margin: 0 0.4rem;
+    padding: 0;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px 0 rgba(138, 149, 158, 0.15);
+    border: 0;
+    outline: 0;
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.link-wrap .btn-link .icon {
+    height: 3.2rem;
+}
+
+.link-wrap .btn-link span {
+    width: 5em;
+}
+
+footer {
+    position: relative;
+    padding-bottom: 6.8rem;
+}
+
+.foot-menu-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 6.4rem;
+    border-top: 1px solid #e1e1e1;
+    background: white;
+}
+
+.foot-menu-list > li {
+    height: 100%;
+    width: 33.3%;
+    cursor: pointer;
+}
+
+.foot-menu-list > li:first-child :hover {
+    text-decoration-line: underline;
+}
+
+.foot-menu-list .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+    color: #2b2b2b;
+}
+
+.foot-phone-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: white;
+}
+
+.foot-phone-list > li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.3rem;
+    border: 1px solid #e1e1e1;
+    border-right: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #2b2b2b;
+}
+
+.foot-phone-list > li .name {
+    display: block;
+}
+
+.foot-phone-list > li .value {
+    display: block;
+    font-weight: 500;
+}   
+
+.foot-sns-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    background: white;
+}
+
+.foot-sns-list > li {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    height: 7.2rem;
+    cursor: pointer;
+}
+
+.company-wrap {
+    padding: 1.6rem;
+    background-color: #f5f5f5;
+}
+
+.company-wrap .company-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #2b2b2b;
+    margin-bottom: 0.8rem;
+}
+
+.company-wrap .company-info-wrap {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #2b2b2b;
+}
+
+.copyright-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    background-color: white;
+    font-size: 1rem;
+    color: #a0a0a0;
+}
+
+.btn-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 7.8rem;
+    border: none;
+    background-color: transparent;
+
+}
+
+.btn-top .icon {
+    height: 5.8rem;
+    cursor: pointer;
+}
+
+.quick-bottom-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 2rem 0;
+    width: 100%;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.quick-bottom-wrap .quick-bottom-list {
+    list-style: none;
+    height: 100%;
+    display: flex;
+}
+
+.quick-bottom-wrap .quick-bottom-list > li {
+    display: flex;
+    width: 20%;
+
+}
+
+.quick-bottom-wrap .quick-bottom-list .link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.3rem 0;
+}
+
+a {
+    background-color: transparent;
+}
+
+.quick-bottom-wrap .quick-bottom-list .link .icon {
+    height: 2.4rem;
+}
+
+.quick-bottom-wrap .quick-bottom-list .link .txt {
+    display: block;
+    font-size: 1rem;
+    color:#000000; 
+}
+
+.quick-bottom-wrap .quick-bottom-list .pizza-order {
+    background-color: rgb(0, 122, 83);
+    height: 100%;
+    width: 20%;
+}
+
+.quick-bottom-wrap .quick-bottom-list .pizza-order i{
+    font-size: 1.8rem;
+    margin-top: 0.3rem;
+    color: white;
+}
+
+.quick-bottom-wrap .quick-bottom-list .pizza-order .txt {
+    margin-top: 0.3rem;
+    color: white;
+}
+
+.quick-bottom-wrap .quick-bottom-list .quick-order {
+    position: relative;
+}
+
+.quick-bottom-wrap .quick-bottom-list .quick-order .icon {
+    height: 2.65rem;
+    margin-top: -0.25rem;
+}
+
+.quick-bottom-wrap .quick-bottom-list .quick-cart .icon {
+    height: 3.7rem;
+    margin-top: -0.8rem;
+}
+
+.quick-bottom-wrap .quick-bottom-list .quick-cart .txt {
+    display: block;
+    margin-top: -0.5rem;
+}
+
+.quick-bottom-wrap .quick-bottom-list > li:hover {
+    background-color: rgba(0, 122, 83, 0.2);
+}
